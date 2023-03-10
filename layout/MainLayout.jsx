@@ -1,3 +1,4 @@
+import LinkButton from "@/components/buttons/Linkbutton/LinkButton";
 import {
   AppBar,
   Box,
@@ -77,34 +78,25 @@ const MainLayout = ({ children }) => {
           </Box>
 
           {!isMobile ? (
-            <Box>
-              <Button className="btn" color="inherit">
-                Home
-              </Button>
-              <Button className="btn" color="inherit">
-                About Me
-              </Button>
-              <Button className="btn" color="inherit">
-                My Experiences
-              </Button>
-              <Button className="btn" color="inherit">
-                My Skills
-              </Button>
-              <Button className="btn" color="inherit">
-                My Projects
-              </Button>
-              <Button className="btn" color="inherit">
-                Testimonials
-              </Button>
-              <Button className="btn" color="inherit">
-                My Resume
-              </Button>
-              <Button className="btn" color="inherit">
-                My Blogs
-              </Button>
-              <Button className="btn" color="inherit">
-                Contact Me
-              </Button>
+            <Box
+              sx={{
+                width: "75%",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "1rem",
+              }}
+            >
+              <LinkButton buttonText="Home" link="/" />
+              <LinkButton buttonText="About Me" link="/about-me" />
+              <LinkButton buttonText="Experiences" link="/experiences" />
+              <LinkButton buttonText="Skills" link="/skills" />
+              <LinkButton buttonText="Projects" link="/projects" />
+              <LinkButton buttonText="Testimonials" link="/testimonials" />
+              <LinkButton buttonText="Resume" link="/resume" />
+              <LinkButton buttonText="Blogs" link="/blogs" />
+              <LinkButton buttonText="Contact Me" link="/contact-me" />
             </Box>
           ) : (
             ""

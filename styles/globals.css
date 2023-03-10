@@ -88,5 +88,6 @@ body {
 body {
   font-family: var(--font-mono);
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  background: #0e1538;
 }

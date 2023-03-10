@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio | Home</title>
+        <title> My Portfolio | Home</title>
         <meta name="description" content="Al Rashid Towmir's Portfolio App" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/top-icon.png" />
